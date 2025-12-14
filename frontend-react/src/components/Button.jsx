@@ -1,9 +1,11 @@
-function Button({ text, className }) {
+import { Link } from "react-router";
+
+function Button({ text, className, url }) {
   return (
     <>
-      <a className={`btn ${className}`} href="">
+      <Link className={`btn ${className}`} to={url}>
         {text}
-      </a>
+      </Link>
     </>
   );
 }
