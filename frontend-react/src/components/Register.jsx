@@ -24,7 +24,7 @@ function Register() {
     };
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/register/",
+        "http://localhost:8080/api/v1/register/",
         userData
       );
       console.log("response.data==>", response.data);
