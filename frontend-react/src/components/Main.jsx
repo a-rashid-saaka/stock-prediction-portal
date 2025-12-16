@@ -15,7 +15,7 @@ function Main() {
             decisions with confidence.
           </p>
 
-          <Button text="Login" className="btn-info" />
+          <Button text="Explore Now" className="btn-info" url="/dashboard" />
         </div>
       </div>
     </>

@@ -26,14 +26,14 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/v1/token/",
+        "http://localhost:7000/api/v1/token/",
         userData
       );
       localStorage.setItem("accessToken", response.data.access);
       localStorage.setItem("refreshToken", response.data.refresh);
       console.log("You are logged in");
       setIsLoggedIn(true);
-      navigate("/");
+      navigate("/dashboard");
     } catch (error) {
       console.error("Invalid credentials");
       setError("Invalid credentials");
